@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+          
+    <property name="hbm2ddl.auto">create</property>  
+        <property name="dialect">org.hibernate.dialect.DB2Dialect</property>  
+        <property name="connection.url">jdbc:db2://localhost:50000/EDGFT</property>  
+        <property name="connection.username">DB2ADMIN</property>  
+        <property name="connection.password">Compaqml2013</property>  
+        <property name="connection.driver_class">com.ibm.db2.jcc.DB2Driver</property> 
+     
+        <mapping class="com.Employee"/>
+        <mapping class="com.RegularEmp"/>
+         <mapping class="com.ContEmp"/>
+           
+              
+    </session-factory>
+</hibernate-configuration>
